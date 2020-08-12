@@ -1,0 +1,41 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ArtifactId:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/ArtifactId_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Dashboard" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.efsavage.jquery:jquery-maven:1.7.2" />
+          <element id="library" level="project" name="Maven: org.webjars.bower:jquery.ajax:1.2.0" />
+          <element id="library" level="project" name="Maven: javax.faces:javax.faces-api:2.3" />
+          <element id="library" level="project" name="Maven: javax.enterprise:cdi-api:2.0" />
+          <element id="library" level="project" name="Maven: javax.el:javax.el-api:3.0.0" />
+          <element id="library" level="project" name="Maven: javax.interceptor:javax.interceptor-api:1.2" />
+          <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
+          <element id="library" level="project" name="Maven: org.jboss.weld.servlet:weld-servlet-shaded:3.1.2.Final" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient-win:4.5.10" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.5.10" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.4.12" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.11" />
+          <element id="library" level="project" name="Maven: net.java.dev.jna:jna:4.5.2" />
+          <element id="library" level="project" name="Maven: net.java.dev.jna:jna-platform:4.5.2" />
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.8.6" />
+          <element id="library" level="project" name="Maven: org.json:json:20160810" />
+          <element id="library" level="project" name="Maven: com.google.maps:google-maps-services:0.10.1" />
+          <element id="library" level="project" name="Maven: com.squareup.okhttp3:okhttp:3.14.2" />
+          <element id="library" level="project" name="Maven: com.squareup.okio:okio:1.17.2" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.26" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-simple:1.7.25" />
+          <element id="library" level="project" name="Maven: com.googlecode.json-simple:json-simple:1.1.1" />
+          <element id="library" level="project" name="Maven: junit:junit:4.10" />
+          <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.1" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="Dashboard/web/Web" />
+      <element id="javaee-facet-resources" facet="ArtifactId/web/Web" />
+    </root>
+  </artifact>
+</component>

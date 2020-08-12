@@ -1,0 +1,24 @@
+.my-custom-scrollbar {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    overflow: auto;
+}
+.table-wrapper-scroll-y {
+    display: block;
+}
+tr.active {
+    background:#ccc;
+}
+
+#bd {
+    cursor: pointer;
+}
+
+#ap {
+    cursor: pointer;
+}
+
+#ot {
+    cursor: pointer;
+}

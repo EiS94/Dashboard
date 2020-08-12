@@ -1,0 +1,53 @@
+Voraussetzungen:
+
+- aktueller Browser (z.B. Mozilla Firefox)
+- Oracle Java (mindestens Version 8)
+- Apache Tomcat® (mindestens Version 8)
+
+
+Installation:
+
+1. Tomcat auf dem Computer so konfigurieren, dass unter "localhost:8080" im Browser die Tomcat-Startseite erscheint,
+   wenn der Server gestartet wurde.
+   (wurden Änderungen an der Adresse, bzw. des Ports vorgenommen, erscheint die Startseite unter den neu konfigurierten Daten.)
+
+2. Auf der Tomcat-Startseite auf "Manager App" klicken und sich mit dem festgelegtem Nutzernamen und Passwort anmelden.
+   Hat man noch keinen Benutzer angelegt oder die Anmeldedaten vergessen, so kann man diese festlegen, indem man die im Verzeichnis
+   "/TOMCAT_HOME/conf/" die Datei "tomcat-users.xml" so anpasst, dass folgende Zeilen enthalten sind:
+		
+	<tomcat-users>
+  	<role rolename="manager-gui"/>
+  	<user username="BENUTZERNAME" password="PASSWORT" roles="manager-gui"/>
+	</tomcat-users>
+
+   BENUTZERNAME und PASSWORT kann dann nach belieben angepasst werden. Danach sollte ein einloggen möglich sein.
+
+3. In der "Manager App" bis zum Abschnitt "Lokale WAR Datei zur Installation hochladen" scrollen. Hier kann mit "Durchsuchen..."
+   die hier mitgelieferte WAR-Datei "Dashboard.war" ausgewählt werden. Anschließend klickt man auf "Installieren". 
+
+4. Unter "Anwendungen" sollte nun ein Eintrag "Dashboard" zu finden sein. Klickt man diesen an, wird man auf das Dashboard   
+   weitergeleitet.
+
+5. Sobald der Tomcat-Server läuft, kann man jetzt im Browser immer über "localhost:8080/Dashboard" auf das Dashboard zugreifen.
+
+Hinweis: Um von anderen Geräten im selben Netzwerk auf das Dashboard zuzugreifen, muss die Datei "server.xml" im Ordner "/TOMCAT_HOME/conf/" so angepasst werden, dass der Server auf der lokalen IP-Adresse des Rechners startet. Um die Standortabfrage
+auch hier zu ermöglichen, ist es erforderlich, dass die Seite unter "https://..." aufgerufen werden kann.
+
+
+
+Funktionen:
+
+Das Dashboard bietet einen Kalender, in den Einträge hinzugefügt, geändert oder gelöscht werden können. Die Einträge können als
+Termin, Geburtstag bzw. Jahrestag und als Notiz deklariert werden.
+Neben dem Kalender werden bis zu 5 Termine des im Kalender ausgewählten Tags angezeigt.
+Außerdem wird im Wetter-Widget das Wetter der aktuellen Position angezeigt. Um die aktuelle Position genauer zu ermitteln, erlauben
+Sie der Seite den Standortzugriff, wenn Ihr Browser sie danach fragt. Alternativ können sie auch die aktuelle Position manuell bestimmen.
+Steht am aktuellen Tag ein Termin in einem anderen Ort an, wird das Wetter von diesem Ort ebenfalls mit angezeigt und die nächsten
+Verbindungen mit öffenltichen Verkehrsmitteln zu diesem Ort werden im entsprechenden Fenster angezeigt.
+
+
+Bedienung:
+
+Um neue Kalendereinträge hinzuzufügen, ....
+Die Informationen zum Transit und Wetter werden automatisch anhand von Standort- und Termininformationen aktualisiert.
+Um den akutellen Standort manuell zu verändern, ....
